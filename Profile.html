@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav>
+
+        <div class="container">
+            <div class="navleft">
+
+                <h1>Profile</h1>
+                <ul class="flexed">
+                    <li>Home</li>
+                    <li>My Profile</li>
+                    <li>My Connections</li>
+                </ul>
+            </div>
+            <button class="button button1">Sign Out</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="usercard">
+                <img id="circle" src="./Images/jane-m.jpg">
+                <div class="row">
+                    <div class="topbar"></div>
+                    <div class="connectionrows">
+                        <h1>Jane Doe</h1>
+                        <div class="location">
+                            <img id="map" src="./Images/map-marker.png">
+                            <p>Seattle</p>
+                        </div>
+                        <p>Developer|Engineer|Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                        <div class="edit">
+                            <img id="gear" src="images/gear.png">
+                            
+                            <button id="edit profile" onclick="Jojo(this)"><edit profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="topbar">
+                    <h2>Education</h2>
+                </div>
+                <p>Coding Dojo - Full Stack Bootcamp</p>
+                <h5>Dec 2019 - Mar 2020</h5>
+                <p>Triple black belt in Python,MERN, and C#...</p>
+            </div>
+        </div>
+
+        <div class="aside">
+            <div class="request">
+                <div class="topbar">
+                    <button class="button button3">2</button>
+                    <h2>Connection Request</h2>
+                </div>
+                <div class="connectionrows">
+                    <div class="connectionrow flexed">
+                        <img src="./Images/phil-s.jpg">
+                        <p>Todd E</p>
+                        <button onclick="remove(this)"><img src="Images/accept-circle.png"></button>
+                        <button onclick="remove(this)"><img src="Images/close-circle.png"></button>
+
+                    </div>
+                    <div class="connectionrow flexed">
+                        <img src="Images/phil-s.jpg">
+                        <p>Phil K</p>
+                        <button onclick="remove(this)"><img src="Images/accept-circle.png"></button>
+                        <button onclick="remove(this)"><img src="Images/close-circle.png"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="connections">
+                <div class="topbar">
+                    <button class="button button2">500+</button>
+                    <h2>Your Connections</h2>
+                </div>
+                <div class="connectionrows">
+                    <div class="flex-start">
+                        <img src="Images/adrien-s.jpg">
+                        <p>Adrien D</p>
+                    </div>
+                    <div class="flex-start">
+                        <img src="Images/anne-s.jpg">
+                        <p>Anne J</p>
+                    </div>
+                    <div class="flex-start">
+                        <img src="Images/alayne-s.jpg">
+                        <p>Alayne T</p>
+                    </div>
+                    <div class="flex-start">
+                        <img src="Images/arry-s.jpg">
+                        <p>Arry Y</p>
+                    </div>
+
+                </div>
+                <footer>
+                    <a href="">View More</a>
+                </footer>
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+</body>
+
+</html>
